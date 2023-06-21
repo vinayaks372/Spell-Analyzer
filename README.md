@@ -1,2 +1,6 @@
 # Spell-Analyzer
-Trie data structure based program that detects the word spelled incorrect or not and suggest nearest correct word - Trie, Linked list, C language.
+This is my Data Structures Project
+
+Spell Analyzer is a software program that corrects spelling errors in word processing, email and online discussions. Spell Analyzer identifies and corrects misspelled words. It also allows you to search a document yourself for words you know you've misspelled. 
+
+Trie, Hash, C language.
