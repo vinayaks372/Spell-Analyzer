@@ -1,0 +1,35 @@
+ hash = (hash << 2) ^ word[i];
+<<      Signed left shift
+^       Bitwise exclusive OR
+
+What is Collision? 
+Since a hash function gets us a small number for a key which is a big integer or string, there is a possibility that two keys result in the same value. The situation where a newly inserted key maps to an already occupied slot in the hash table is called collision and must be handled using some collision handling technique. 
+
+
+Separate Chaining: 
+ The idea behind separate chaining is to implement the array as a linked list called a chain. Separate chaining is one of the most popular and commonly used techniques in order to handle collisions. The linked list data structure is used to implement this technique. So what happens is, when multiple elements are hashed into the same slot index, then these elements are inserted into a singly-linked list  which is known as a chain. Here, all those elements that hash into the same slot index are inserted into a  linked list. Now, we can use a key K to search in the linked list by just linearly traversing. If intrinsic key for any entry is equal to K then it means that we have found out our entry. If we have reached till the end of the linked list and yet we haven’t found out our entry then it means that the entry does not exist. Hence, the conclusion is that in separate chaining, if two different elements have the same hash value then we store both the elements in the same linked list one after other.
+
+
+//This is the trieload
+first of all we are creating the trie by loading the dictionary .txt file reading the each word and its ascii value of each letter  and making the trie tree considering the both intger as well as the characters 
+Also procesding throgh error free and checking if there is error or not in opeing the file and counting the trie count how many words are inserted in the trie data structure 
+
+//triecheck 
+It simply checks the given ascii value of the each of the characters of the given word is that node is null or not in 36 pointeres of array we are creating the trie load
+
+//trie unload 
+trie unload is used to unload the all the words that we are inserted means free the nodes
+
+//trie traversal 
+
+It takes the word and copy that word into the another word variable
+if the head->end is one then print that word means if the word is complete then print that word 
+basically we are going in recurrsion and finding the word that is complete in trie guess
+
+
+//trie guess
+Taking the prefix and finding the word correspondance to that prefix 
+with the help of the trie traversal
+48 to 57 ascii value for the 0 to 9
+97 to 122 ascii value for the a to z
+
